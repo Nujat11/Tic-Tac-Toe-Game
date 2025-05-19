@@ -66,7 +66,7 @@ public class computerVsController {
                     if (checkWin("O")) {
                         statusLabel.setText("Computer Wins!");
                         endGame();
-                    } else if (isBoardFull()) {
+                    } else if (isDraw()) {
                         statusLabel.setText("Draw!");
                     } else {
                         statusLabel.setText("Your turn (X)");
@@ -88,7 +88,7 @@ public class computerVsController {
         return false;
     }
 
-    private boolean isBoardFull() {
+    private boolean isDraw() {
         for (int i = 0; i < 3; i++)
             for (int j = 0; j < 3; j++)
                 if (board[i][j] == null) return false;
