@@ -10,5 +10,4 @@ This project offers a clean and colorful FXML-based UI for playing Tic Tac Toe i
 
 1. Sleek, responsive UI design with gamepad icons
 2. Interactive buttons for selecting game mode
-3. Smooth user experience for all age groups
-4. Lightweight and beginner-friendly codebase
+3. Lightweight and beginner-friendly codebase
