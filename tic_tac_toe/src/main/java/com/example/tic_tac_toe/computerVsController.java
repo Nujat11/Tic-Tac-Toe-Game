@@ -51,12 +51,12 @@ public class computerVsController {
             } else {
                 playerTurn = false;
                 statusLabel.setText("Computer's turn (O)");
-                computerMove();
+                computerMovement();
             }
         }
     }
 
-    private void computerMove() {
+    private void computerMovement() {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 if (board[i][j] == null) {
