@@ -46,7 +46,7 @@ public class computerVsController {
             if (checkWin("X")) {
                 statusLabel.setText("You Win!");
                 endGame();
-            } else if (isBoardFull()) {
+            } else if (isDraw()) {
                 statusLabel.setText("Draw!");
             } else {
                 playerTurn = false;
