@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="430.0" prefWidth="426.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tic_tac_toe.player1_Vs_Player2Controller">
+
+    <children>
+
+        <GridPane hgap="10" layoutX="50" layoutY="50" vgap="10">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="100" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="100" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="100" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="100.0" valignment="CENTER" />
+                <RowConstraints minHeight="100.0" valignment="CENTER" />
+                <RowConstraints minHeight="100.0" valignment="CENTER" />
+            </rowConstraints>
+
+            <Button fx:id="btn00" onAction="#ButtonOnAction" prefHeight="100" prefWidth="100" style="-fx-background-color: linear-gradient(to bottom right, #FF6F61, #FF9980); -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 24px;" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Button fx:id="btn01" onAction="#ButtonOnAction" prefHeight="100" prefWidth="100" style="-fx-background-color: linear-gradient(to bottom right, #6B5B95, #9E8ED6); -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 24px;" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <Button fx:id="btn02" onAction="#ButtonOnAction" prefHeight="100" prefWidth="100" style="-fx-background-color: linear-gradient(to bottom right, #88B04B, #B5D48E); -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 24px;" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <Button fx:id="btn10" onAction="#ButtonOnAction" prefHeight="100" prefWidth="100" style="-fx-background-color: linear-gradient(to bottom right, #F7CAC9, #FFD6D9); -fx-text-fill: black; -fx-font-weight: bold; -fx-font-size: 24px;" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Button fx:id="btn11" onAction="#ButtonOnAction" prefHeight="100" prefWidth="100" style="-fx-background-color: linear-gradient(to bottom right, #92A8D1, #C1CBE8); -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 24px;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="btn12" onAction="#ButtonOnAction" prefHeight="100" prefWidth="100" style="-fx-background-color: linear-gradient(to bottom right, #955251, #BB7A89); -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 24px;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="btn20" onAction="#ButtonOnAction" prefHeight="100" prefWidth="100" style="-fx-background-color: linear-gradient(to bottom right, #B565A7, #D29BC3); -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 24px;" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Button fx:id="btn21" onAction="#ButtonOnAction" prefHeight="100" prefWidth="100" style="-fx-background-color: linear-gradient(to bottom right, #009B77, #33C9A0); -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 24px;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="btn22" onAction="#ButtonOnAction" prefHeight="100" prefWidth="100" style="-fx-background-color: linear-gradient(to bottom right, #DD4124, #FF6A43); -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 24px;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        </GridPane>
+
+        <Label fx:id="statusLabel" alignment="CENTER" layoutX="63.0" layoutY="377.0" prefHeight="30" prefWidth="300" style="-fx-font-size: 18px;">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Button layoutX="382.0" layoutY="392.0" mnemonicParsing="false" onAction="#backButtonOnAction" style="-fx-background-color: white;" text="&lt;-" />
+
+    </children>
+</AnchorPane>
