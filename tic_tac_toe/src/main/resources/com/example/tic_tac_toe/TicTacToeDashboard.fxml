@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom right, #ffecd2, #fcb69f);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tic_tac_toe.TicTacToeDashboardController">
+<AnchorPane prefHeight="430.0" prefWidth="426.0" style="-fx-background-color: linear-gradient(to bottom right, #ffecd2, #fcb69f);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tic_tac_toe.TicTacToeDashboardController">
     <children>
         <Label layoutX="140.0" layoutY="69.0" prefHeight="60.0" prefWidth="320.0" style="-fx-text-fill: #4b0082; -fx-background-color: rgba(255,255,255,0.7); -fx-alignment: center; -fx-border-radius: 10; -fx-background-radius: 10;" text="🎮 Tic Tac Toe 🎮">
             <font>
