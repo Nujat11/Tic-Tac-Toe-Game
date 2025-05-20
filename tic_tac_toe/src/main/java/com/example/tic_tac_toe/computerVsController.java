@@ -26,6 +26,9 @@ public class computerVsController {
                 {btn10, btn11, btn12},
                 {btn20, btn21, btn22}
         };
+        for (int i = 0; i < 3; i++)
+            for (int j = 0; j < 3; j++)
+                board[i][j] = null;
         statusLabel.setText("Your turn (X)");
     }
 
@@ -78,29 +81,30 @@ public class computerVsController {
         }
     }
 
-    private boolean checkWin(String symbol) {
-        for (int i = 0; i < 3; i++) {
-            if (symbol.equals(board[i][0]) && symbol.equals(board[i][1]) && symbol.equals(board[i][2])) return true;
-            if (symbol.equals(board[0][i]) && symbol.equals(board[1][i]) && symbol.equals(board[2][i])) return true;
-        }
-        if (symbol.equals(board[0][0]) && symbol.equals(board[1][1]) && symbol.equals(board[2][2])) return true;
-        if (symbol.equals(board[0][2]) && symbol.equals(board[1][1]) && symbol.equals(board[2][0])) return true;
-        return false;
+    private boolean checkWin(String s) {
+        for (int i = 0; i < 3; i++)
+            if ((s.equals(board[i][0]) && s.equals(board[i][1]) && s.equals(board[i][2])) ||
+                    (s.equals(board[0][i]) && s.equals(board[1][i]) && s.equals(board[2][i])))
+                return true;
+
+        return (s.equals(board[0][0]) && s.equals(board[1][1]) && s.equals(board[2][2])) ||
+                (s.equals(board[0][2]) && s.equals(board[1][1]) && s.equals(board[2][0]));
     }
 
     private boolean isDraw() {
         for (String[] row : board)
             for (String cell : row)
-                if (cell.isEmpty())
+                if (cell == null)
                     return false;
         return true;
     }
-    
+
     private void endGame() {
         for (Button[] row : buttons)
             for (Button b : row)
                 b.setDisable(true);
     }
+
     @FXML
     public void backButtonOnAction(ActionEvent event) {
         try {
