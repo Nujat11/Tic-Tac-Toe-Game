@@ -16,11 +16,11 @@ public class player1_Vs_Player2Controller {
 
     private boolean isXTurn = true;
     private String[][] board = new String[3][3];
-    private Button[][] buttonGrid;
+    private Button[][] buttons;
 
     @FXML
     public void initialize() {
-        buttonGrid = new Button[][] {
+        buttons = new Button[][] {
                 {btn00, btn01, btn02},
                 {btn10, btn11, btn12},
                 {btn20, btn21, btn22}
@@ -82,7 +82,7 @@ public class player1_Vs_Player2Controller {
     }
 
     private void endGame() {
-        for (Button[] row : buttonGrid)
+        for (Button[] row : buttons)
             for (Button b : row)
                 b.setDisable(true);
     }
