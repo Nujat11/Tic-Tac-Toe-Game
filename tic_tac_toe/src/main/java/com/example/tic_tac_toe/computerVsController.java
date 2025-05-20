@@ -89,18 +89,18 @@ public class computerVsController {
     }
 
     private boolean isDraw() {
-        for (int i = 0; i < 3; i++)
-            for (int j = 0; j < 3; j++)
-                if (board[i][j] == null) return false;
+        for (String[] row : board)
+            for (String cell : row)
+                if (cell.isEmpty())
+                    return false;
         return true;
     }
-
+    
     private void endGame() {
-        for (int i = 0; i < 3; i++)
-            for (int j = 0; j < 3; j++)
-                buttons[i][j].setDisable(true);
+        for (Button[] row : buttons)
+            for (Button b : row)
+                b.setDisable(true);
     }
-
     @FXML
     public void backButtonOnAction(ActionEvent event) {
         try {
