@@ -39,7 +39,7 @@ public class player1_Vs_Player2Controller {
 
         for (int i = 0; i < 3; i++)
             for (int j = 0; j < 3; j++)
-                if (clicked == buttonGrid[i][j]) {
+                if (clicked == buttons[i][j]) {
                     row = i;
                     col = j;
                 }
